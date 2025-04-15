@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ✅ Add this login section here -->
+  <div id="loginSection">
+    <input type="text" id="username" placeholder="Username" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- ✅ Main app section -->
+  <div id="app">
+    <h1>Library Management System</h1>
+    <input type="text" id="searchBar" placeholder="Search books..." oninput="filterBooks()" />
+    <div id="bookList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
